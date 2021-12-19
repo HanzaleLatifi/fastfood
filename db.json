@@ -1,0 +1,105 @@
+{
+    "products":[
+        {
+            "id":1 ,
+            "name" : "برگر مرغ" ,
+            "img": "/images/burgerchiken.png",
+            "price":"65000" , 
+            "gram":"100" ,
+            "materials":"سینه مرغ ، کاهو ، سس مخصوص "
+            
+        } ,
+        {
+            "id":2 ,
+            "name" : "برگر دوبل" ,
+            "img": "/images/burgerdouble.png",
+            "price":"98000" , 
+            "gram":"210" ,
+            "materials":"گوشت قرمز ، گرجه ، سس مخصوص "
+            
+        } ,
+        {
+            "id":3 ,
+            "name" : "برگر کینگ" ,
+            "img": "/images/burgerking.png",
+            "price":"85000" , 
+            "gram":"160" ,
+            "materials":"گوشت گوسفند ، سبزیجات ، سس مخصوص "
+            
+        } ,
+        {
+            "id":4,
+            "name" : "برگر گوشت" ,
+            "img": "/images/burgermeet.png",
+            "price":"90000" , 
+            "gram":"140" ,
+            "materials":"گوشت مخصوص ، کاهو ، سیب زمینی "
+            
+        } ,
+        {
+            "id":5,
+            "name" : "برگر هاوایی" ,
+            "img": "/images/burgerhawaiian.png",
+            "price":"78000" , 
+            "gram":"120" ,
+            "materials":"سینه مرغ ، گوشت چرخ کرده ، سس سیر "
+            
+        } ,
+        {
+            "id":6,
+            "name" : "برگر سیاه" ,
+            "img": "/images/burgerblack.png",
+            "price":"87000" , 
+            "gram":"170" ,
+            "materials":"گوشت گاو ، زیتون ، سس مخصوص "
+            
+        } ,
+        {
+            "id":7 ,
+            "name" : "پیتزا گوشت" ,
+            "img": "/images/pizzameet.png",
+            "price":"99000" , 
+            "gram":"300" ,
+            "materials":"گوشت ، قارچ ، سس مخصوص "
+            
+        } ,
+        {
+            "id": 8,
+            "name" : "پیتزا لاروخا" ,
+            "img": "/images/pizzatomato.png",
+            "price":"90000" , 
+            "gram":"280" ,
+            "materials":"سینه مرغ ، قارچ ، سس مخصوص "
+            
+        } ,
+        {
+            "id":9,
+            "name" : " پیتزا ویژه" ,
+            "img": "/images/pizzaspecial.png",
+            "price":"88000" , 
+            "gram":"230" ,
+            "materials":"گوشت ، کاهو ، سس مخصوص "
+            
+        } ,
+        {
+            "id":10,
+            "name" : " پاستا ویژه" ,
+            "img": "/images/pastaspecil.png",
+            "price":"65000" , 
+            "gram":"130" ,
+            "materials":"پاستا ، مرغ ، سس مخصوص "
+            
+        } 
+       
+
+    ] ,
+    "users":[
+        {   "id":1,
+            "name":"حنظله لطیفی" ,
+            "phone":"09172325774" ,
+            "email":"h.latifi03@gmail.com" ,
+            "password":"52853900h"
+
+        }
+    ]
+}

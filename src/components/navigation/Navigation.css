@@ -1,0 +1,43 @@
+header {
+  width: 90%;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2.2rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+
+}
+header .logo {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  color: #f3914a;
+}
+header .menu {
+  display: none;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  margin: 0 1rem;
+  color: #f6f6f6;
+}
+.icon-container span {
+  margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
