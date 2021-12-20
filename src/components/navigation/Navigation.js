@@ -1,4 +1,4 @@
-import { NavLink, withRouter } from "react-router-dom";
+import { Link, NavLink, withRouter } from "react-router-dom";
 import "./Navigation.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
@@ -9,11 +9,11 @@ function Navigation() {
       <div className="menu">
         <AiOutlineMenu className="menu-bar" />
       </div>
-      <div className="logo">لاروخا</div>
+      <div className="logo">  <Link to="/">لاروخا</Link> </div>
       <nav>
         <ul>
           <li>
-            <NavLink to="/"  exact activeClassName="active-link">
+            <NavLink to="/" exact activeClassName="active-link">
               خانه
             </NavLink>
           </li>
@@ -36,12 +36,17 @@ function Navigation() {
         </ul>
       </nav>
       <div className="icon-container">
-        <span>
-          <ImCart />
-        </span>
-        <span>
-          <FaUserAlt />
-        </span>
+        <div className="badge-content">
+          <span>0</span>
+          <Link to="/cart">
+            <ImCart />
+          </Link>
+        </div>
+        <div>
+          <Link to="/profile">
+            <FaUserAlt />
+          </Link>
+        </div>
       </div>
     </header>
   );

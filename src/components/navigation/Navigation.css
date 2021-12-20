@@ -32,8 +32,29 @@ header nav ul li a {
   margin: 0 1rem;
   color: #f6f6f6;
 }
-.icon-container span {
+.icon-container div {
   margin: 0 1rem;
+  display: inline;
+}
+a{
+  color: #f3914a;
+}
+.badge-content{
+  position: relative;
+}
+.badge-content span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2.6rem;
+  left: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f6f6f6;
+  color: #f3914a;
+  border-radius: 50%;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 768px) {

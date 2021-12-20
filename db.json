@@ -1,12 +1,13 @@
 {
-    "products":[
+    "foods":[
         {
             "id":1 ,
             "name" : "برگر مرغ" ,
             "img": "/images/burgerchiken.png",
             "price":"65000" , 
             "gram":"100" ,
-            "materials":"سینه مرغ ، کاهو ، سس مخصوص "
+            "materials":"سينه مرغ ، کاهو ، سس مخصوص " ,
+            "type":"burger"
             
         } ,
         {
@@ -15,34 +16,38 @@
             "img": "/images/burgerdouble.png",
             "price":"98000" , 
             "gram":"210" ,
-            "materials":"گوشت قرمز ، گرجه ، سس مخصوص "
+            "materials":"گوشت قرمز ، گرجه ، سس مخصوص ",
+            "type":"burger"
             
         } ,
         {
             "id":3 ,
-            "name" : "برگر کینگ" ,
+            "name" : "برگر کينگ" ,
             "img": "/images/burgerking.png",
             "price":"85000" , 
             "gram":"160" ,
-            "materials":"گوشت گوسفند ، سبزیجات ، سس مخصوص "
+            "materials":"گوشت گوسفند ، سبزيجات ، سس مخصوص " ,
+            "type":"burger"
             
         } ,
         {
             "id":4,
             "name" : "برگر گوشت" ,
-            "img": "/images/burgermeet.png",
+            "img": "/images/burgerking.png",
             "price":"90000" , 
             "gram":"140" ,
-            "materials":"گوشت مخصوص ، کاهو ، سیب زمینی "
+            "materials":"گوشت مخصوص ، کاهو ، سيب زميني " ,
+            "type":"burger"
             
         } ,
         {
             "id":5,
-            "name" : "برگر هاوایی" ,
+            "name" : "برگر هاوايي" ,
             "img": "/images/burgerhawaiian.png",
             "price":"78000" , 
             "gram":"120" ,
-            "materials":"سینه مرغ ، گوشت چرخ کرده ، سس سیر "
+            "materials":"سينه مرغ ، گوشت چرخ کرده ، سس سير " ,
+            "type":"burger"
             
         } ,
         {
@@ -51,43 +56,48 @@
             "img": "/images/burgerblack.png",
             "price":"87000" , 
             "gram":"170" ,
-            "materials":"گوشت گاو ، زیتون ، سس مخصوص "
+            "materials":"گوشت گاو ، زيتون ، سس مخصوص " ,
+            "type":"burger"
             
         } ,
         {
             "id":7 ,
-            "name" : "پیتزا گوشت" ,
+            "name" : "پيتزا گوشت" ,
             "img": "/images/pizzameet.png",
             "price":"99000" , 
             "gram":"300" ,
-            "materials":"گوشت ، قارچ ، سس مخصوص "
+            "materials":"گوشت ، قارچ ، سس مخصوص " ,
+            "type":"pizza"
             
         } ,
         {
             "id": 8,
-            "name" : "پیتزا لاروخا" ,
+            "name" : "پيتزا لاروخا" ,
             "img": "/images/pizzatomato.png",
             "price":"90000" , 
             "gram":"280" ,
-            "materials":"سینه مرغ ، قارچ ، سس مخصوص "
+            "materials":"سينه مرغ ، قارچ ، سس مخصوص " , 
+            "type":"pizza"
             
         } ,
         {
             "id":9,
-            "name" : " پیتزا ویژه" ,
+            "name" : " پيتزا ويژه" ,
             "img": "/images/pizzaspecial.png",
             "price":"88000" , 
             "gram":"230" ,
-            "materials":"گوشت ، کاهو ، سس مخصوص "
+            "materials":"گوشت ، کاهو ، سس مخصوص " ,
+            "type":"pizza"
             
         } ,
         {
             "id":10,
-            "name" : " پاستا ویژه" ,
+            "name" : " پاستا ويژه" ,
             "img": "/images/pastaspecil.png",
             "price":"65000" , 
             "gram":"130" ,
-            "materials":"پاستا ، مرغ ، سس مخصوص "
+            "materials":"پاستا ، مرغ ، سس مخصوص " ,
+            "type":"pasta"
             
         } 
        

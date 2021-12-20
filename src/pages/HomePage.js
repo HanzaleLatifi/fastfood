@@ -6,16 +6,7 @@ import bgimg from "../assets/bg.png";
 import Menu from "../components/menu/Menu";
 
 function HomePage() {
-  const [state, setState] = useState([]);
-  useEffect(() => {
-    axios
-      .get("http://localhost:4000/products")
-      .then((res) => {
-        setState(res.data);
-      })
-      .catch((e) => console.log(e));
-  }, []);
-  console.log(state);
+ 
 
   return (
     <>

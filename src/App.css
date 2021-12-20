@@ -6,7 +6,9 @@ border-radius: 1.5rem;
 cursor: pointer;
 }
 .btn:hover{
-box-shadow: 0rem 0rem .8rem 1rem #be600859;
+box-shadow: 0rem 0rem 2rem 1rem #be600859 ,
+0rem 0rem 4rem #be600859 ,
+0rem 0rem 8rem #be600859;
 background-color: #fd832c;
 }
 .btn-primary{
