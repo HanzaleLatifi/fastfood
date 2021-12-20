@@ -5,13 +5,17 @@ import {FaHamburger} from 'react-icons/fa'
 import {GiBowlOfRice} from 'react-icons/gi'
 import { useEffect , useState } from 'react';
 import getAllFoods from '../../services/getAllFoods';
+import { useCartActions } from '../../providers/CartProvider';
+import { toast } from 'react-toastify';
 
 export default function Menu() {
     const [foods, setFoods] = useState([]);
     const [type,setType]=useState("burger");
+    const dispatch=useCartActions();
 
-    const buyFood=(food)=>{
-        console.log(food)
+    const addToCart=(food)=>{
+        dispatch({type:"ADD_TO_CART" , payload:food})
+        toast.success(`${food.name} به سبد شما اضافه شد`);
 
     }
 
@@ -44,7 +48,7 @@ export default function Menu() {
                                     <img src={food.img}/>
                                 </div>
                                 <div className="flexi">
-                                    <button onClick={()=>{buyFood(food)}} className="add-btn btn-primary">+</button>
+                                    <button onClick={()=>addToCart(food)} className="add-btn btn-primary">+</button>
                                     <p className="price">{food.price} تومان</p>
                                 </div>
                           </div> )
