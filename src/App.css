@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;800&display=swap");
 /* start common styles */
 .btn{
 font-size: 2rem;
@@ -14,6 +15,9 @@ background-color: #fd832c;
 .btn-primary{
   color: #f6f6f6;
   background-color: #F3914A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heading{
   width: 100%;
@@ -21,6 +25,7 @@ background-color: #fd832c;
   font-size: 4rem;
   color: #F3914A;
   text-align: center;
+
 }
 /* end common styles   */
 
@@ -31,6 +36,8 @@ background-color: #fd832c;
   min-height: 90vh;
   width: 90%;
   margin: 0 auto;
+  font-family: "Tajawal";
+
 }
 #home .landingPage {
   padding: 1rem 5rem;

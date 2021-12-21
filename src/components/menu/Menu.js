@@ -7,6 +7,7 @@ import { useEffect , useState } from 'react';
 import getAllFoods from '../../services/getAllFoods';
 import { useCartActions } from '../../providers/CartProvider';
 import { toast } from 'react-toastify';
+import {AiOutlinePlus} from 'react-icons/ai'
 
 export default function Menu() {
     const [foods, setFoods] = useState([]);
@@ -48,7 +49,7 @@ export default function Menu() {
                                     <img src={food.img}/>
                                 </div>
                                 <div className="flexi">
-                                    <button onClick={()=>addToCart(food)} className="add-btn btn-primary">+</button>
+                                    <button onClick={()=>addToCart(food)} className="add-btn btn-primary"> <AiOutlinePlus/> </button>
                                     <p className="price">{food.price} تومان</p>
                                 </div>
                           </div> )

@@ -79,7 +79,7 @@
   cursor: pointer;
   font-size: 2.5rem;
   border-radius: 1rem;
-  padding: 0.1rem 1.4rem;
+  padding: .8rem 1.4rem;
   border: none;
 }
 .foodItem .add-btn:hover {
@@ -100,4 +100,9 @@
   background-color: #fd832c;
  box-shadow: 0rem 0rem 2rem 1rem #f57702cc, 0rem 0rem 4rem #be600859,
  0rem 0rem 8rem #be600859;
+}
+@media (max-width:768px){
+  .foodItem{
+    width: 90%;
+  }
 }

@@ -1,47 +1,76 @@
-import { useCart } from "../../providers/CartProvider";
+import { useCart, useCartActions } from "../../providers/CartProvider";
 import "./Cart.css";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
+import {BiTrash} from 'react-icons/bi'
+import {AiOutlinePlus} from 'react-icons/ai'
+import {AiOutlineMinus} from 'react-icons/ai'
+
 function Cart() {
-  const {cart} = useCart();
-  console.log(cart)
-  console.log(cart)
+  const { cart } = useCart();
+  const dispatch = useCartActions();
+
+  const incToCart = (food) => {
+    dispatch({ type: "ADD_TO_CART", payload: food });
+  };
+  const decFromCart = (food) => {
+    dispatch({ type: "DEC_FROM_CART", payload: food });
+  };
+
   return (
     <div className="cart-container">
       <div className="cart-items">
-        {cart.length ?  cart.map((food) => {
-          return (
-            <div className="cart-item" key={food.id}>
-              <div className="cart-content">
-                <p className="cart-name">{food.name}</p>
-                <p>{food.materials}</p>
-                <p>{food.gram} گرم</p>
-                <p className="cart-price">{food.price} تومان</p>
-              </div>
-              <div className="img-count">
-                <div className="imagee">
-                  <img src={food.img} />
+        {cart.length ? (
+          cart.map((food) => {
+            return (
+              <div className="cart-item" key={food.id}>
+                <div className="cart-content">
+                  <p className="cart-name">{food.name}</p>
+                  <p>{food.materials}</p>
+                  <p>{food.gram} گرم</p>
+                  <p className="cart-price">
+                    {food.price * food.quantity} تومان
+                  </p>
                 </div>
-                <div className="counter">
-                  <button className="btn-primary">+</button>
-                  <span>{food.quantity}</span>
-                  <button className="btn-primary">-</button>
+                <div className="img-count">
+                  <div className="imagee">
+                    <img src={food.img} />
+                  </div>
+                  <div className="counter">
+                    <button
+                      onClick={() => incToCart(food)}
+                      className="btn-primary"
+                    >
+                      <AiOutlinePlus/>
+                    </button>
+                    <span>{food.quantity}</span>
+                    <button
+                      onClick={() => decFromCart(food)}
+                      className="btn-primary"
+                    >
+                      {food.quantity===1 ? <BiTrash/> : <AiOutlineMinus/>}
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        }) : <div className="empty">
-                <p>  ليست سفارشات شما خالي است ...   </p>
-                <p> <Link to="/menu">مشاهده منو </Link> </p>
-            </div>}
+            );
+          })
+        ) : (
+          <div className="empty">
+            <p> ليست سفارشات شما خالي است ... </p>
+            <p>
+              {" "}
+              <Link to="/menu">مشاهده منو </Link>{" "}
+            </p>
+          </div>
+        )}
       </div>
       <div className="cart-summary">
-          <p>سفارشات</p> 
-          <hr/>
-          <p>قيمت كل : 880000 تومان</p>
-          <p>تخفيف : 0 </p> 
-          <p> قيمت پرداختي : 880000 تومان </p>
-          <button className="checkout-btn" >ادامه سفارش</button>
-
+        <p>سفارشات</p>
+        <hr />
+        <p>قيمت كل : 880000 تومان</p>
+        <p>تخفيف : 0 </p>
+        <p> قيمت پرداختي : 880000 تومان </p>
+        <button className="checkout-btn">ادامه سفارش</button>
       </div>
     </div>
   );
