@@ -3,7 +3,10 @@ import "./Navigation.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
+import { useCart } from "../../providers/CartProvider";
 function Navigation() {
+
+  const {cart}=useCart();
   return (
     <header>
       <div className="menu">
@@ -18,7 +21,7 @@ function Navigation() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products" activeClassName="active-link">
+            <NavLink to="/menu" activeClassName="active-link">
               منو
             </NavLink>
           </li>
@@ -37,7 +40,7 @@ function Navigation() {
       </nav>
       <div className="icon-container">
         <div className="badge-content">
-          <span>0</span>
+          <span>{cart.length}</span>
           <Link to="/cart">
             <ImCart />
           </Link>

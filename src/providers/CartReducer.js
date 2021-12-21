@@ -7,10 +7,10 @@ const cartReducer=(state , action)=>{
                 (item) => item.id === action.payload.id
               );      
             if(foundIndex<0){
-                updatedCart.push({...action.payload ,quantinty:1 })
+                updatedCart.push({...action.payload ,quantity:1 })
             }else{
                 const updatedItem={...updatedCart[foundIndex]};
-                updatedItem.quantinty++;
+                updatedItem.quantity++;
                 updatedCart[foundIndex]=updatedItem;
             }
             return {...state , cart:updatedCart}

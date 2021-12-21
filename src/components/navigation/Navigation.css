@@ -52,13 +52,20 @@ a{
   width: 2rem;
   height: 2rem;
   background-color: #f6f6f6;
-  color: #f3914a;
+  color: #ff6a00;
   border-radius: 50%;
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+.active-link{
+  color: #f3914a;
+  text-shadow: 1rem 0 5rem  #f3914a;
 }
 
 @media (max-width: 768px) {
   .menu {
     display: block;
+  }
+  header nav {
+    display: none;
   }
 }
