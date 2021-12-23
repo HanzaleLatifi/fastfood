@@ -1,115 +1,112 @@
 {
-    "foods":[
-        {
-            "id":1 ,
-            "name" : "برگر مرغ" ,
-            "img": "/images/burgerchiken.png",
-            "price":"65000" , 
-            "gram":"100" ,
-            "materials":"سينه مرغ ، کاهو ، سس مخصوص " ,
-            "type":"burger"
-            
-        } ,
-        {
-            "id":2 ,
-            "name" : "برگر دوبل" ,
-            "img": "/images/burgerdouble.png",
-            "price":"98000" , 
-            "gram":"210" ,
-            "materials":"گوشت قرمز ، گرجه ، سس مخصوص ",
-            "type":"burger"
-            
-        } ,
-        {
-            "id":3 ,
-            "name" : "برگر کينگ" ,
-            "img": "/images/burgerking.png",
-            "price":"85000" , 
-            "gram":"160" ,
-            "materials":"گوشت گوسفند ، سبزيجات ، سس مخصوص " ,
-            "type":"burger"
-            
-        } ,
-        {
-            "id":4,
-            "name" : "برگر گوشت" ,
-            "img": "/images/burgerking.png",
-            "price":"90000" , 
-            "gram":"140" ,
-            "materials":"گوشت مخصوص ، کاهو ، سيب زميني " ,
-            "type":"burger"
-            
-        } ,
-        {
-            "id":5,
-            "name" : "برگر هاوايي" ,
-            "img": "/images/burgerhawaiian.png",
-            "price":"78000" , 
-            "gram":"120" ,
-            "materials":"سينه مرغ ، گوشت چرخ کرده ، سس سير " ,
-            "type":"burger"
-            
-        } ,
-        {
-            "id":6,
-            "name" : "برگر سیاه" ,
-            "img": "/images/burgerblack.png",
-            "price":"87000" , 
-            "gram":"170" ,
-            "materials":"گوشت گاو ، زيتون ، سس مخصوص " ,
-            "type":"burger"
-            
-        } ,
-        {
-            "id":7 ,
-            "name" : "پيتزا گوشت" ,
-            "img": "/images/pizzameet.png",
-            "price":"99000" , 
-            "gram":"300" ,
-            "materials":"گوشت ، قارچ ، سس مخصوص " ,
-            "type":"pizza"
-            
-        } ,
-        {
-            "id": 8,
-            "name" : "پيتزا لاروخا" ,
-            "img": "/images/pizzatomato.png",
-            "price":"90000" , 
-            "gram":"280" ,
-            "materials":"سينه مرغ ، قارچ ، سس مخصوص " , 
-            "type":"pizza"
-            
-        } ,
-        {
-            "id":9,
-            "name" : " پيتزا ويژه" ,
-            "img": "/images/pizzaspecial.png",
-            "price":"88000" , 
-            "gram":"230" ,
-            "materials":"گوشت ، کاهو ، سس مخصوص " ,
-            "type":"pizza"
-            
-        } ,
-        {
-            "id":10,
-            "name" : " پاستا ويژه" ,
-            "img": "/images/pastaspecil.png",
-            "price":"65000" , 
-            "gram":"130" ,
-            "materials":"پاستا ، مرغ ، سس مخصوص " ,
-            "type":"pasta"
-            
-        } 
-       
-
-    ] ,
-    "users":[
-        {   "id":1,
-            "name":"حنظله لطیفی" ,
-            "phone":"09172325774" ,
-            "email":"h.latifi03@gmail.com" ,
-            "password":"52853900h"
-
-        }
-    ]
+  "foods": [
+    {
+      "id": 1,
+      "name": "برگر مرغ",
+      "img": "/images/burgerchiken.png",
+      "price": "65000",
+      "gram": "100",
+      "materials": "سينه مرغ ، کاهو ، سس مخصوص ",
+      "type": "burger"
+    },
+    {
+      "id": 2,
+      "name": "برگر دوبل",
+      "img": "/images/burgerdouble.png",
+      "price": "98000",
+      "gram": "210",
+      "materials": "گوشت قرمز ، گرجه ، سس مخصوص ",
+      "type": "burger"
+    },
+    {
+      "id": 3,
+      "name": "برگر کينگ",
+      "img": "/images/burgerking.png",
+      "price": "85000",
+      "gram": "160",
+      "materials": "گوشت گوسفند ، سبزيجات ، سس مخصوص ",
+      "type": "burger"
+    },
+    {
+      "id": 4,
+      "name": "برگر گوشت",
+      "img": "/images/burgerking.png",
+      "price": "90000",
+      "gram": "140",
+      "materials": "گوشت مخصوص ، کاهو ، سيب زميني ",
+      "type": "burger"
+    },
+    {
+      "id": 5,
+      "name": "برگر هاوايي",
+      "img": "/images/burgerhawaiian.png",
+      "price": "78000",
+      "gram": "120",
+      "materials": "سينه مرغ ، گوشت چرخ کرده ، سس سير ",
+      "type": "burger"
+    },
+    {
+      "id": 6,
+      "name": "برگر سیاه",
+      "img": "/images/burgerblack.png",
+      "price": "87000",
+      "gram": "170",
+      "materials": "گوشت گاو ، زيتون ، سس مخصوص ",
+      "type": "burger"
+    },
+    {
+      "id": 7,
+      "name": "پيتزا گوشت",
+      "img": "/images/pizzameet.png",
+      "price": "99000",
+      "gram": "300",
+      "materials": "گوشت ، قارچ ، سس مخصوص ",
+      "type": "pizza"
+    },
+    {
+      "id": 8,
+      "name": "پيتزا لاروخا",
+      "img": "/images/pizzatomato.png",
+      "price": "90000",
+      "gram": "280",
+      "materials": "سينه مرغ ، قارچ ، سس مخصوص ",
+      "type": "pizza"
+    },
+    {
+      "id": 9,
+      "name": " پيتزا ويژه",
+      "img": "/images/pizzaspecial.png",
+      "price": "88000",
+      "gram": "230",
+      "materials": "گوشت ، کاهو ، سس مخصوص ",
+      "type": "pizza"
+    },
+    {
+      "id": 10,
+      "name": " پاستا ويژه",
+      "img": "/images/pastaspecil.png",
+      "price": "65000",
+      "gram": "130",
+      "materials": "پاستا ، مرغ ، سس مخصوص ",
+      "type": "pasta"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "حنظله لطیفی",
+      "phone": "09172325774",
+      "email": "h.latifi03@gmail.com",
+      "password": "52853900h",
+      "address": "خیابان معلم - بلالاتر از عینک تیام"
+    },
+    {
+      "name": "hanzale",
+      "email": "h.latifi03@gmail.com",
+      "password": "52853900h",
+      "phoneNumber": "09172325774",
+      "address": "asasasasa",
+      "id": 2
+    }
+  ]
 }

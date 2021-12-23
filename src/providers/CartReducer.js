@@ -23,7 +23,7 @@ const cartReducer = (state, action) => {
 
       if (action.payload.quantity === 1) {
         const filteredCart = updatedCart.filter(
-          (item) => item.id != action.payload.id
+          (item) => item.id !== action.payload.id
         );
         return {
           ...state,

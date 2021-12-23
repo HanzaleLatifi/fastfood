@@ -1,11 +1,13 @@
 import { useCart, useCartActions } from "../../providers/CartProvider";
 import "./Cart.css";
 import { Link } from "react-router-dom";
-import {BiTrash} from 'react-icons/bi'
-import {AiOutlinePlus} from 'react-icons/ai'
-import {AiOutlineMinus} from 'react-icons/ai'
+import { BiTrash } from "react-icons/bi";
+import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlineMinus } from "react-icons/ai";
+import { useAuth } from "../../providers/AuthProvider";
 
 function Cart() {
+  const isAuth=useAuth();
   const { cart } = useCart();
   const dispatch = useCartActions();
 
@@ -15,6 +17,10 @@ function Cart() {
   const decFromCart = (food) => {
     dispatch({ type: "DEC_FROM_CART", payload: food });
   };
+
+  const sumPrice = cart.length
+  ? cart.reduce((acc, curr) => acc + curr.quantity * curr.price, 0)
+  : "0";
 
   return (
     <div className="cart-container">
@@ -33,21 +39,21 @@ function Cart() {
                 </div>
                 <div className="img-count">
                   <div className="imagee">
-                    <img src={food.img} />
+                    <img src={food.img} alt={food.name} />
                   </div>
                   <div className="counter">
                     <button
                       onClick={() => incToCart(food)}
                       className="btn-primary"
                     >
-                      <AiOutlinePlus/>
+                      <AiOutlinePlus />
                     </button>
                     <span>{food.quantity}</span>
                     <button
                       onClick={() => decFromCart(food)}
                       className="btn-primary"
                     >
-                      {food.quantity===1 ? <BiTrash/> : <AiOutlineMinus/>}
+                      {food.quantity === 1 ? <BiTrash /> : <AiOutlineMinus />}
                     </button>
                   </div>
                 </div>
@@ -67,10 +73,12 @@ function Cart() {
       <div className="cart-summary">
         <p>سفارشات</p>
         <hr />
-        <p>قيمت كل : 880000 تومان</p>
+        <p>قيمت كل : {sumPrice} تومان</p>
         <p>تخفيف : 0 </p>
-        <p> قيمت پرداختي : 880000 تومان </p>
-        <button className="checkout-btn">ادامه سفارش</button>
+        <p> قيمت پرداختي : {sumPrice} تومان </p>
+        <Link to={isAuth?"/checkout" : "/enterData"}>
+          <button className="checkout-btn">ادامه سفارش</button>
+        </Link>
       </div>
     </div>
   );

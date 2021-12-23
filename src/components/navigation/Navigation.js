@@ -1,11 +1,14 @@
 import { Link, NavLink, withRouter } from "react-router-dom";
 import "./Navigation.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import {FiLogIn} from "react-icons/fi"
 import { FaUserAlt } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
 import { useCart } from "../../providers/CartProvider";
+import { useAuth } from "../../providers/AuthProvider";
+//
 function Navigation() {
-
+  const isAuth=useAuth();
   const {cart}=useCart();
   return (
     <header>
@@ -46,8 +49,8 @@ function Navigation() {
           </Link>
         </div>
         <div>
-          <Link to="/profile">
-            <FaUserAlt />
+          <Link to={isAuth? "/profile" : "/signup"}>
+            {isAuth? <FaUserAlt /> : <FiLogIn/> }  
           </Link>
         </div>
       </div>

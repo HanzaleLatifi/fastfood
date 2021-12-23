@@ -46,7 +46,7 @@ export default function Menu() {
                                 <p className="name">{food.name}</p>
                                 <p className="material">{food.materials}</p>
                                 <div className="foodImg">
-                                    <img src={food.img}/>
+                                    <img src={food.img} alt={food.name}/>
                                 </div>
                                 <div className="flexi">
                                     <button onClick={()=>addToCart(food)} className="add-btn btn-primary"> <AiOutlinePlus/> </button>

@@ -1,0 +1,62 @@
+.table-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: aliceblue;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 4rem;
+}
+table {
+  width: 100%;
+  border-radius: 2rem;
+}
+table,
+th,
+tr,
+td {
+  font-family: serif !important;
+  font-size: 2rem;
+  padding: 2rem;
+  border-collapse: collapse;
+}
+thead {
+  text-align: center;
+}
+th,
+td {
+  text-align: center;
+  border-bottom: 1px solid rgb(255, 145, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #000000;
+}
+tfoot tr td {
+    text-align: center;
+  font-family: serif !important;
+  border: none ;
+}
+.buy-btn{
+    margin: 4rem auto;
+    width: 40rem;
+}
+
+
+@media (max-width:970px){
+    .table-container{
+        width: 98%;
+    }
+    td{
+        font-size: 1.8rem;
+    }
+    .buy-btn{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+
+}

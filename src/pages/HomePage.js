@@ -1,6 +1,4 @@
 import React from "react";
-import axios from "axios";
-import { useState, useEffect } from "react";
 import "../App.css";
 import bgimg from "../assets/bg.png";
 import Menu from "../components/menu/Menu";
@@ -18,7 +16,7 @@ function HomePage() {
           <a href="#menu" className="btn btn-primary" style={{fontSize:'3rem',width:'20rem'}}>مشاهده منو </a>
           </div>
           <div className="landingImg">
-            <img src={bgimg} />
+            <img src={bgimg} alt="fastfood"/>
           </div>
         </main>
       </section>
