@@ -7,7 +7,7 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { useAuth } from "../../providers/AuthProvider";
 
 function Cart() {
-  const isAuth=useAuth();
+  const isAuth = useAuth();
   const { cart } = useCart();
   const dispatch = useCartActions();
 
@@ -19,8 +19,8 @@ function Cart() {
   };
 
   const sumPrice = cart.length
-  ? cart.reduce((acc, curr) => acc + curr.quantity * curr.price, 0)
-  : "0";
+    ? cart.reduce((acc, curr) => acc + curr.quantity * curr.price, 0)
+    : "0";
 
   return (
     <div className="cart-container">
@@ -65,21 +65,28 @@ function Cart() {
             <p> ليست سفارشات شما خالي است ... </p>
             <p>
               {" "}
-              <Link to="/menu">مشاهده منو </Link>{" "}
+              <Link to="/menu" className="btn btn-primary">مشاهده منو </Link>{" "}
             </p>
           </div>
         )}
       </div>
-      <div className="cart-summary">
-        <p>سفارشات</p>
-        <hr />
-        <p>قيمت كل : {sumPrice} تومان</p>
-        <p>تخفيف : 0 </p>
-        <p> قيمت پرداختي : {sumPrice} تومان </p>
-        <Link to={isAuth?"/checkout" : "/enterData"}>
-          <button className="checkout-btn">ادامه سفارش</button>
-        </Link>
-      </div>
+      {cart.length ? (
+        <>
+        <div className="clear"></div>
+        <div className="cart-summary">
+          <p>سفارشات</p>
+          <hr />
+          <p>قيمت كل : {sumPrice} تومان</p>
+          <p>تخفيف : 0 </p>
+          <p> قيمت پرداختي : {sumPrice} تومان </p>
+          <Link to={isAuth ? "/checkout" : "/enterData"}>
+            <button className="checkout-btn">ادامه سفارش</button>
+          </Link>
+        </div>
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

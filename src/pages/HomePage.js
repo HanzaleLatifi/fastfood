@@ -13,7 +13,7 @@ function HomePage() {
           <div className="landingText">
             <h2 className="heading"> به فست فود لاروخا خوش آمديد</h2>
             <p>طعمي لذيذ و به ياد ماندني را با ما تجربه كنيد</p>
-          <a href="#menu" className="btn btn-primary" style={{fontSize:'3rem',width:'20rem'}}>مشاهده منو </a>
+            <a href="#menu" className="btn btn-primary" style={{fontSize:'3rem',width:'20rem'}}>مشاهده منو </a>
           </div>
           <div className="landingImg">
             <img src={bgimg} alt="fastfood"/>

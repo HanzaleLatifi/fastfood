@@ -1,6 +1,5 @@
 import { Link, NavLink, withRouter } from "react-router-dom";
 import "./Navigation.css";
-import { AiOutlineMenu } from "react-icons/ai";
 import {FiLogIn} from "react-icons/fi"
 import { FaUserAlt } from "react-icons/fa";
 import { ImCart } from "react-icons/im";
@@ -12,9 +11,6 @@ function Navigation() {
   const {cart}=useCart();
   return (
     <header>
-      <div className="menu">
-        <AiOutlineMenu className="menu-bar" />
-      </div>
       <div className="logo">  <Link to="/">لاروخا</Link> </div>
       <nav>
         <ul>
