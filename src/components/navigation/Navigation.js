@@ -26,9 +26,9 @@ function Navigation() {
           </li>
 
           <li>
-            <NavLink to="/aboutus" activeClassName="active-link">
+            <a href="#aboutus" activeClassName="active-link">
               درباره ما
-            </NavLink>
+            </a>
           </li>
           <li>
             <NavLink to="/contactus" activeClassName="active-link">
