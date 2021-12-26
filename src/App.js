@@ -21,7 +21,7 @@ function App() {
         <CartProvider>
           <Layout>
             <ToastContainer
-              style={{ fontSize: "1.7rem", fontFamily: "sans-serif" }}
+              style={{ fontSize: "1.7rem" , right:0 , zIndex:"1000000"}}
             />
             <Switch>
               <Route path="/enterData" component={EnterData}/>

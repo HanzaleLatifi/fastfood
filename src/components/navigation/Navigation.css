@@ -9,6 +9,7 @@ header {
   margin: 1rem auto;
   border-radius: 2rem;
   font-family: "Tajawal", sans-serif;
+  z-index: 10000;
 }
 
 header .logo {
@@ -74,6 +75,7 @@ a {
     box-shadow: 0 1rem 1rem rgb(0, 0, 0);
     background-color: #333;
   }
+  
   header .logo {
     font-size: 3.6rem;
   }

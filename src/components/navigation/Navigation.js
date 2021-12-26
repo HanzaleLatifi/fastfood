@@ -26,14 +26,14 @@ function Navigation() {
           </li>
 
           <li>
-            <a href="#aboutus" activeClassName="active-link">
+            <a href="#aboutus" >
               درباره ما
             </a>
           </li>
           <li>
-            <NavLink to="/contactus" activeClassName="active-link">
+            <a href="#aboutus" >
               تماس با ما
-            </NavLink>
+            </a>
           </li>
         </ul>
       </nav>
