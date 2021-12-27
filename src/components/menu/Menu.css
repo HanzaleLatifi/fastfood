@@ -53,6 +53,9 @@
   padding: 3rem 1rem;
   margin: 2rem 0;
   text-align: center;
+  box-shadow: inset 0 0.4rem 1rem black, inset 0 -0.6rem 1rem black,
+  inset 0.6rem 0rem 1rem black, inset -0.6rem 0rem 1rem black;
+
 }
 .foodItem:hover{
   transform:scale(1.1);

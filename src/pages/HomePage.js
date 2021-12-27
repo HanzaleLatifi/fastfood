@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import bgimg from "../assets/bg1.png";
+import Duties from "../components/duties/Duties";
 import Footer from "../components/footer/Footer";
 import Menu from "../components/menu/Menu";
 
@@ -21,6 +22,7 @@ function HomePage() {
           </div>
         </main>
       </section>
+      <Duties/>
       <Menu />
       <Footer/>
     </>
